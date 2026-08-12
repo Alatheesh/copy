@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-mini", "id": "bb1", "top": 257.8, "left": 132, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -18.6, "left": -163.8, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 54.4,
+      "left": 399.2,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -57.3,
+      "left": 234.6,
+      "attrs": { "humidity": "74", "temperature": "29.9" }
+    }
+  ],
+  "connections": [
+    [ "lcd1:SDA", "uno:A4", "green", [ "h-76.8", "v67.5" ] ],
+    [ "lcd1:SCL", "uno:A5", "green", [ "h-115.2", "v67.5", "h-196.3" ] ],
+    [ "uno:GND.2", "bb1:5b.f", "black", [ "v0" ] ],
+    [ "dht1:GND", "bb1:5b.i", "black", [ "v0" ] ],
+    [ "lcd1:GND", "bb1:5b.h", "black", [ "h-172.8", "v67.2" ] ],
+    [ "uno:5V", "bb1:1t.a", "yellow", [ "v0" ] ],
+    [ "dht1:VCC", "bb1:1t.d", "yellow", [ "v0" ] ],
+    [ "lcd1:VCC", "bb1:1t.c", "yellow", [ "h-192", "v192.1" ] ],
+    [ "dht1:SDA", "uno:2", "green", [ "v19.2", "h-186.4" ] ]
+  ],
+  "dependencies": {}
+}
