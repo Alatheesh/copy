@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Latheesh Reddy",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -95.4, "left": -0.6, "attrs": {} },
+    { "type": "board-mfrc522", "id": "rfid1", "top": -108.25, "left": 329.84, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:10", "rfid1:SDA", "green", [ "v-9.6", "h307.9" ] ],
+    [ "uno:13", "rfid1:SCK", "green", [ "v0", "h336.4" ] ],
+    [ "uno:11", "rfid1:MOSI", "green", [ "v9.6", "h317.4" ] ],
+    [ "uno:12", "rfid1:MISO", "green", [ "v0" ] ],
+    [ "uno:GND.2", "rfid1:GND", "black", [ "v-144.1", "h291.9" ] ],
+    [ "rfid1:RST", "uno:9", "green", [ "h0" ] ],
+    [ "uno:3.3V", "rfid1:3.3V", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
