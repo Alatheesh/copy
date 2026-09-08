@@ -66,7 +66,7 @@ void loop() {
   else {
 
     Serial.println("Unknown Card");
-    Serial.println("Attendance: UNKNOWN PERSON");
+    Serial.println("Attendance: NO ATTENDANCE");
 
   }
 
