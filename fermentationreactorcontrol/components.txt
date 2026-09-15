@@ -1,0 +1,9 @@
+Arduino Uno Rev3
+Half Breadboard
+DHT22 Sensor
+1-Channel Relay Module
+16×2 I2C LCD
+Pushbutton
+Buzzer
+Red LED
+1 kΩ Resistor
