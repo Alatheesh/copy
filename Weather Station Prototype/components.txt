@@ -1,0 +1,9 @@
+* Arduino Uno Rev3
+* Breadboard
+* DHT22 Sensor
+* BMP180 Pressure Sensor
+* Photoresistor (LDR) Sensor
+* 16×2 I2C LCD
+* Green LED
+* 1 kΩ Resistor
+* Buzzer
